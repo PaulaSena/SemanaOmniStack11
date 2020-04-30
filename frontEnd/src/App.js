@@ -8,7 +8,13 @@ function App() {
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <p>
-          Edit <code>src/App.js</code> and save to reload.
+         Start realizado | React app  http://localhost:3000 </p>
+
+        <p> 
+        Edição na pasta src/App.js do arquivo carregado!
+
+    Ufa!!!
+
         </p>
         <a
           className="App-link"

@@ -40,4 +40,6 @@ app.listen(3333);
 
 //Teminal executar aplicação | node index.js
 
-// Feita a instalação do npm i -g create-react-app para iniciar o projeto com ReactJs 
+/* Feita a instalação do npm i -g create-react-app para iniciar o projeto com ReactJs 
+                       | npx create-react-app frontend
+*/
