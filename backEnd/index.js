@@ -71,9 +71,7 @@ Feito a instalação dele, aí você poderá utilizar o mesmo para criar novos p
 
 // Teminal executar aplicação | node index.js
 
-/* 
- Start realizado | React app  http://localhost:3000 
-Edição realizada na pasta src/App.js do arquivo carregado no React app  http://localhost:3000 
-
-
-*/
+/** Start realizado | React app  
+ *Edição realizada na pasta src/App.js do arquivo carregado 
+ no React app  http://localhost:3000 
+**/
