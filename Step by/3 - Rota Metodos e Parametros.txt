@@ -1,0 +1,104 @@
+
+❤❤  Rota é um conjunto com *Método  *Recurso, *Requisição e Resposta.
+
+/**** Rota (app.get) -> get método de busca.  
+* ('/') *Recurso -> Local especifico para ser acessado 
+*  Ex: Listar USERS no banco http://localhost:3333/ USERS
+*/
+
+
+/**** Resposta execultada no formato de texto Send  ex1
+app.get('/', (req, res) => {
+    return res.send('Hello World');
+}); 
+*/
+
+/**** Resposta execultada no formato de texto Send  ex2
+app.get('/', (req, res) => res.send('Hello World!'))
+*/
+
+
+
+/*** Retornando uma reposta no formato Json = (objeto em javaScript) ex:dados de usuario.
+app.get('/', (req, res) => {
+    return res.json({
+    evento: 'Semana OmniStack 11.0',
+    aluno: 'Ana Paula Sena'
+})
+})
+*/
+
+
+//*** Criando um usuario com método POST e realizando teste com software Postman!
+
+app.get('/users/', (req, res) => {
+    return res.json({
+    evento: 'Semana OmniStack 11.0',
+    aluno: 'Ana Paula Silva'
+})
+})
+
+| instalando o nodemon para nao ter q reiniciar o servidor a cada alteração
+
+~>npm install nodemon -D
+
+em package.json vai localizalo como dependencia de dev 
+quando estiver no servidor express nao ira execultar
+
+
+
+
+
+
+
+
+
+/**** Métodos HTTP 
+* HTTP Get ->Buscar uma informação do back-end - Ex. Buscar informação de Usuário
+* HTTP Post ->Criar uma informação no back-end - Ex. Cria Usuário.
+* HTTP Put -> Alterar uma informação no back-and.
+* HTTP Delete: Deletar uma informação no back-end.
+*/
+
+
+1 - Query  Parms  Parâmetros nomeados enviados na rota após“?”          
+             Get  *Ex (filtros, paginação)        
+
+2 - Route  Parms  Parâmetros para identificar recursos.
+                    *Ex. ID usuário especifico..
+
+3 - Request  Body Corpo da requisição do usuário., se quiser, criar ou alterar recurso EX: nome email senha
+
+
+4 - HTTP Delete Deletar uma informação no back-end.
+
+
+
+
+
+❤ ❤ Criar Usuario ❤ ❤ 
+
+/* (Criar)  Metodo Get para buscar Usuario Parâmetro Body 
+*  Request  Body : Parâmetros para criar ou alterar recurso
+*  EX: Nome E-mail senha.
+*/
+
+Utilizar no Postiman
+-POST http://localhost:3333/users
+
+/* (Criar)  Metodo Get para criar Usuario Parâmetro Body 
+*  Request  Body : Parâmetros para criar ou alterar recurso
+*  EX: Nome E-mail senha.
+*/
+
+
+
+VScode:
+    app.post('/users', (req, res) => {
+        const body=req.body;
+
+        console.log(body);
+
+    return res.json({
+    evento: 'Semana OmniStack 11.0',
+    aluno: 'Theo David'

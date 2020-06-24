@@ -1,0 +1,68 @@
+
+
+❤  1 - Criado o arquivo index.js dentro da pasta backEnd.
+
+
+❤  2 - Base | importando funcionalidades do express para variavel.
+const express = require('express');
+      				
+          // Quando Undefined Informar ao navegador que requisições pode vim em Json 
+          app.use(express.json());
+
+❤  3 - Criando variavel para aplicação
+const app = express();
+
+
+❤  4 - Traçando rota.
+ app.get('/', (req, res) => res.send('Hello World!'))
+
+❤  5 - Definindo porta de localhost:
+app.listen(3333);
+Feita a rota de uma pagina especifica!
+
+
+
+❤  Rota é um conjunto com *Método  *Recurso, *Requisição e Resposta.
+
+/**** Rota (app.get) -> get método de busca.  
+* ('/') *Recurso -> Local especifico para ser acessado 
+*  Ex: Listar USERS no banco http://localhost:3333/ USERS
+*/
+
+/**** Resposta execultada no formato de texto Send  ex1
+app.get('/', (req, res) => {
+    return res.send('Hello World');
+}); 
+*/
+
+
+/**** Resposta execultada no formato de texto Send  ex2
+app.get('/', (req, res) => res.send('Hello World!'))
+*/
+
+
+
+/*** Retornando uma reposta no formato Json = (objeto em javaScript) ex:dados de usuario.
+app.get('/', (req, res) => {
+    return res.json({
+    evento: 'Semana OmniStack 11.0',
+    aluno: 'Ana Paula Sena'
+})
+})
+*/
+
+//*** Criando um usuario com método POST e realizando teste com software Postman!
+
+app.get('/users/', (req, res) => {
+    return res.json({
+    evento: 'Semana OmniStack 11.0',
+    aluno: 'Ana Paula Silva'
+})
+})
+
+| instalando o nodemon para nao ter q reiniciar o servidor a cada alteração
+
+~>npm install nodemon -D
+
+em package.json vai localizalo como dependencia de dev 
+quando estiver no servidor express nao ira execultar

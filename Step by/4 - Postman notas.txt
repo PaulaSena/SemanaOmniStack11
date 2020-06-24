@@ -1,0 +1,121 @@
+Instalação do Postman:
+
+
+
+❤❤❤❤❤❤❤ NO TERMINAL ARQUIVO INDEX.JS INSTALAR O 
+
+🌹 NODEMON.
+
+| instalando o nodemon para nao ter q reiniciar o servidor a cada alteração
+
+~>npm install nodemon -D
+
+em package.json vai localizalo como dependencia de dev 
+quando estiver no servidor express nao ira execultar
+
+
+❤❤❤❤❤❤❤
+
+❤❤  Rota é um conjunto com *Método  *Recurso, *Requisição e Resposta.
+
+/**** Rota (app.get) -> get método de busca.  
+* ('/') *Recurso -> Local especifico para ser acessado 
+*  Ex: Listar USERS no banco http://localhost:3333/ USERS
+*/
+
+
+❤ 🌹 🌹 🌹 🌹 🌹 🌹 🌹 🌹 🌹 ❤ 🌹 🌹 🌹 🌹 🌹 🌹 🌹 🌹 ❤ 🌹 🌹 🌹 🌹 🌹 🌹 🌹 🌹 ❤ 🌹 🌹 🌹 🌹 🌹 🌹 🌹 🌹 🌹
+
+Execultar outra rota servidor para outro metodo.
+
+http://localhost:3333/
+
+Testar Métodos.
+			
+// Quando Undefined Informar ao navegador index.js que requisições pode vim em Json do postman
+app.use(express.json());
+
+ +New 
+-POST http://localhost:3333/users
+
+
+Iniciar servidor
+-index.js
+ code . v
+
+
+
+❤ 🌹 🌹 🌹 🌹 🌹 🌹 🌹 🌹 🌹 ❤ 🌹 🌹 🌹 🌹 🌹 🌹 🌹 🌹 ❤ 🌹 🌹 🌹 🌹 🌹 🌹 🌹 🌹 ❤ 🌹 🌹 🌹 🌹 🌹 🌹 🌹 🌹 🌹
+
+
+//*** Criando um usuario com método POST e realizando teste com software Postman!
+
+app.get('/users/', (req, res) => {
+    return res.json({
+    evento: 'Semana OmniStack 11.0',
+    aluno: 'Ana Paula Silva'
+})
+})
+
+
+
+
+❤ 🌹 🌹 🌹 🌹 🌹 🌹 🌹 🌹 🌹 ❤ 🌹 🌹 🌹 🌹 🌹 🌹 🌹 🌹 ❤ 🌹 🌹 🌹 🌹 🌹 🌹 🌹 🌹 ❤ 🌹 🌹 🌹 🌹 🌹 🌹 🌹 🌹 🌹
+
+
+VScode index.js teste com nova rota metodo e requisição. 
+
+
+❤ ❤ Criar Usuario ❤ ❤ 
+
+/* (Criar)  Metodo Get para buscar Usuario Parâmetro Body 
+*  Request  Body : Parâmetros para criar ou alterar recurso
+*  EX: Nome E-mail senha.
+*/
+
+
+
+No Postman criar um metodo post para testar:
+
+ +New 
+-POST http://localhost:3333/users
+ Send.
+
+
+/* (Criar)  Metodo Get para criar Usuario Parâmetro Body 
+*  Request  Body : Parâmetros para criar ou alterar recurso
+*  EX: Nome E-mail senha.
+*/
+
+
+
+VScode:
+    app.post('/users', (req, res) => {
+        const body=req.body;
+
+        console.log(body);
+
+    return res.json({
+    evento: 'Semana OmniStack 11.0',
+    aluno: 'Theo David'
+
+
+
+ABRIR Postiman digitar a requisição http://localhost:3000/users
+
+
+
+
+❤❤❤❤❤❤❤ NO TERMINAL ARQUIVO INDEX.JS INSTALAR O 
+
+🌹 NODEMON 
+
+| instalando o nodemon para nao ter q reiniciar o servidor a cada alteração
+
+~>npm install nodemon -D
+
+em package.json vai localizalo como dependencia de dev 
+quando estiver no servidor express nao ira execultar
+
+
+❤❤❤❤❤❤❤

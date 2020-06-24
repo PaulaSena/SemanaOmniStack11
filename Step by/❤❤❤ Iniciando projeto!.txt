@@ -1,0 +1,126 @@
+❤ Iniciando projeto! ❤
+
+
+
+❤ 🌹 🌹 🌹 🌹 🌹 🌹 🌹 🌹 🌹 ❤ 🌹 🌹 🌹 🌹 🌹 🌹 🌹 🌹 ❤ 🌹 🌹 🌹 🌹 🌹 🌹 🌹 🌹 ❤ 🌹 🌹 🌹 🌹 🌹 🌹 🌹 🌹 🌹
+
+
+Atalhos: 
+
+* F12 - Ferramenta Desenvolvedor. control + r
+* ! - Corpo de pagina.
+*Ctrl+/ - Adicionar comentario   /* comentario */
+
+
+Ferramentas:
+
+* Vs code
+* Vs code - Launchebase Theme
+* Vs code Live server - Atualização do navegador 
+* Postman - 
+
+
+
+Tags novas
+
+Fonts .google.com
+*  :root --primary-color:rgb(64, 243, 136);
+   background-color: var(--primary-color);
+
+*  inserindo gradiente com a variavel de cor primaria |  background-image: linear-gradient(to bottom right,violet, var(--primary-color));
+
+
+
+❤ 🌹 🌹 🌹 🌹 🌹 🌹 🌹 🌹 🌹 ❤ 🌹 🌹 🌹 🌹 🌹 🌹 🌹 🌹 ❤ 🌹 🌹 🌹 🌹 🌹 🌹 🌹 🌹 ❤ 🌹 🌹 🌹 🌹 🌹 🌹 🌹 🌹 🌹
+
+
+
+1) Step One ❤
+   🌹  Criar pasta com o nome do projeto.
+   🌹  Dentro dela criar pasta backEnd. 
+     - Pasta backEnd | Criar arquivo index.js 
+
+❤ Com o botão direito do mause na pasta backEnd clicar em Open in Terminal.
+  - Abrira um terminal dentro do VScode executar o comando: 
+
+ |   ~> npm install express
+
+🌹  Criado esse arquivo index.js dentro da pasta backEnd.
+   Instalando o Express
+(O Framworks cria automaticamente as pastas com os códigos fontes e dependências do próprio express)
+
+
+
+
+❤ 
+
+
+
+
+🌹 2 - Base | importando funcionalidades do express para variavel.
+const express = require('express');
+
+🌹 3 - Criando variavel para aplicação
+const app = express();
+
+🌹 4 - Traçando rota.
+
+
+
+🌹🌹🌹🌹🌹
+
+Rota é um conjunto com *Método  *Recurso, *Requisição e Resposta.
+
+**** Rota (app.get) -> get método de busca.  
+* ('/') *Recurso -> Local especifico para ser acessado 
+*  Ex: Listar USERS no banco http://localhost:3333/ USERS
+*
+
+
+/**** Resposta execultada no formato de texto Send  ex1
+app.get('/', (req, res) => {
+    return res.send('Hello World');
+}); 
+*/
+
+
+/**** Resposta execultada no formato de texto Send  ex2
+app.get('/', (req, res) => res.send('Hello World!'))
+*/
+
+
+
+/*** Retornando uma reposta no formato Json = (objeto em javaScript) ex:dados de usuario.
+app.get('/', (req, res) => {
+    return res.json({
+    evento: 'Semana OmniStack 11.0',
+    aluno: 'Ana Paula Sena'
+})
+})
+*/
+
+//*** Criando um usuario com método POST e realizando teste com software Postman!
+
+app.get('/users/', (req, res) => {
+    return res.json({
+    evento: 'Semana OmniStack 11.0',
+    aluno: 'Ana Paula Silva'
+})
+})
+
+/****Métodos 
+* HTTP Get ->Buscar uma informação do back-end - Ex. Buscar informação de Usuário
+* HTTP Post ->Criar uma informação no back-end - Ex. Cria Usuário.
+* HTTP Put -> Alterar uma informação no back-and.
+* HTTP Delete: Deletar uma informação no back-end.
+*/
+
+
+
+// Definindo porta de localhost:
+app.listen(3333);
+//Feita a rota de uma pagina especifica!
+
+
+🌹
+

@@ -1,0 +1,32 @@
+1 passo
+
+Na pasta do projeto inicie o terminal Git bash e digite 
+| code . v
+
+Abrira o VSCode ja na pasta do projeto com o botão direito do mause 
+na pasta do projeto em clicar em Open in terminal
+
+/****  No terminal Pasta principal realizar a instalação do app react.
+
+|~> npm i -g create-react-app 
+
+*** Para iniciar o projeto com ReactJs digite o comando seguinte... e por ultimo o nome da pasta.
+|~> npx create-react-app frontEnd
+
+***Feito a instalação dele, poderá utiliza-lo para criar novos projetos.
+ ****/
+
+/**** Na pasta frontEnd Executar Teminal :
+| ~> npm start 
+// esse comando iniciara um script dentro do package.json
+// http://localhost:3000
+
+
+// Executar Teminal na rota da aplicação 
+|~> node index.js
+
+abrir navegador e digitar http://localhost:3000 
+
+/** Start realizado =) | React app  
+ *Edição realizada =) Ola mundo, pasta src/App.js no React app  http://localhost:3000 
+**/
